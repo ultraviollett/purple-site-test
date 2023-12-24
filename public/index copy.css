@@ -1,0 +1,43 @@
+.main-con{
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-rows: 2em 20% calc(80% - 6em) 4em;
+    grid-template-columns: 3fr 1fr 5fr 5fr;
+}
+
+.side-con{
+    grid-area: 2 / 1 / span 2 / span 1;
+}
+
+.main-con{
+    
+}
+.welcome-updates-con{
+    height:inherit;
+    display: grid;
+    grid-template-columns: 5fr 6fr ;
+    gap: 5px;
+    padding: 3px;
+    padding-left: 3.5em;
+    border: white solid 2px;
+
+}
+
+
+
+.button-below {
+    background-color: purple;
+    padding: 5px;
+    color: pink;
+    border: pink solid 2px;
+    margin: auto 5px
+}
+
+.all-con{
+    background-color: purple;
+    margin: 40px;
+    display: flex;
+    flex-direction:  row;
+    height: 70%;
+}

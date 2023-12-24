@@ -1,0 +1,139 @@
+body{
+    background: rgb(75,34,78);
+    background: radial-gradient(circle, rgba(75,34,78,1) 0%, rgba(41,30,45,1) 100%); 
+    overflow-y: hidden;
+}
+
+ /* width */
+ ::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #C95BA1;
+    border-radius: 5px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #903c71;
+  } 
+
+#body-box{
+    display: flex;
+
+    align-items: stretch;
+    justify-content: center;
+}
+
+#all-con{
+    min-width: 900px;
+    max-width: 1200px;
+    max-height: 700px;
+    display: grid;
+    grid-template-rows: 2em 15% auto 4em;
+    grid-template-columns: 3fr 1fr 10fr 10fr;
+    margin-right: 25px;
+    margin-left: 25px;
+    margin-top:  clamp(10px, 10vh, 15vh);
+    margin-bottom:  clamp(10px, 10vh, 15vh);
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+
+#side-con{
+    grid-area: 3 / 1 / span 1 / span 2 ;
+    z-index: 10;
+    border: white solid;
+    border-radius: 10px;
+    margin-bottom: auto;
+    background-color: #251725;
+
+}
+
+#side-con>div#header-image{
+    display: block;
+    background-color: #903c71;
+    height: 30px;
+    margin: auto 15%;
+    margin-top: -15px;
+
+}
+
+#side-con>div#links{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 15px auto;
+    
+}
+
+#currently-listening-con{
+    grid-area: 1 / 2 / span 1 / span 2;
+    display: block;
+    white-space: nowrap;
+    overflow-x: hidden;
+}
+
+#welcome-updates-con{
+
+    max-height: 100%;
+    grid-area: 2 / 2 / span 2 / span 3;
+    border: white solid;
+    border-radius: 10px;
+    background-color: #251725;
+    overflow-y: hidden;
+
+}
+
+#welcome-con{
+    grid-area: 3 / 3 ;
+    display:block;
+    width: 80%;
+
+    padding: 0 10%;
+}
+
+#updates-con{
+    grid-area: 3 / 4;
+    overflow-y: hidden;
+
+}
+
+#updates-con>div>p{
+    background-color: #903c71;
+    border: #C95BA1 solid 2px;
+    padding: 0 20px 0 0;
+}
+
+#updates-con div {
+    height: 85%;
+    overflow-y: scroll;
+    margin-right: 2em;
+    padding: 0 5px 0 0;
+}
+
+
+
+#updates-con dl{
+    border: #C95BA1 solid 2px;
+    border-top: none
+}
+
+#button-con{
+    grid-area: 4 / 3 / span 1 / span 2;
+}
+
+.button-below {
+    background-color: #622B57;
+    padding: 5px;
+    color: #CA5BA3;
+    border: #CA5BA3 solid 2px;
+    margin: auto 5px
+}
+
